@@ -1,0 +1,19 @@
+For export environments:
+
+Ant Maze, Point Maze, 3-Block Stacking, Pen Rotation and Block Rotation:
+
+export PYTHONPATH= "/common/users/your path/mrl"
+
+export MUJOCO_GL=egl MUJOCO_RENDERER=egl LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libGLEW.so:/usr/lib/x86_64-linux-gnu/libGL.so PYTHONPATH=/common/users/your path/lexa-benchmark
+
+
+See Training Progress by tensorboard:
+
+tensorboard --logdir logdir/your logdir path --port 6007
+
+
+Training Scripts:
+
+python dreamerv2/gc_main.py --configs RotatePen(environment name in config file) --logdir "your logdir path" 
+
+
