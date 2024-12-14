@@ -13,13 +13,28 @@ If you find our paper or code useful, please reference us:
 }
 ```
 
+CE2 learns the latent space by temporary distance estimator, reflecting the reachability of states in latent space. Then CE2 dose clustering to group states that are easily reachable from one another by the current policy under the latent space and traversing to states holding significant exploration potential on the boundary of these clusters before doing exploratory behavior. CE^2 selects goal states at the edges of these latent state clusters for exploration because 
+(1) less explored regions are naturally adjacent to these boundaries.
+(2) given the easy accessibility between states within each cluster by the 	training policy, the agent’s capability extends to reaching states even at the cluster boundaries.
+
+
+<img src="Resources/CE2_illus.png" alt="CE2 illus" width="600" />
+
+CE2 outperforms other exploration approaches across a variety of tasks.
+
+<img src="Resources/exp_success_rate.png" alt="CE2 success" width="600" />
+
+Exploration process during training steps in Ant-Maze. 
+
+<img src="Resources/ant-explore-process.png" alt="CE2 success" width="600" />
+
 
 ## Code Structure
 
 ```
 CE2/
-  |- Config/              # config file for each environment.
-  |- dreamerv2/       # C^2 implement
+  |- Config/                    # config file for each environment.
+  |- dreamerv2/                 # C^2 implement
   |- dreamerv2/gc_main.py       # Main running file
 ```
 
