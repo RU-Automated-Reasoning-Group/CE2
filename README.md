@@ -29,7 +29,7 @@ CE2 outperforms other exploration approaches across a variety of tasks.
 ```
 CE2/
   |- Config/                    # config file for each environment.
-  |- dreamerv2/                 # C^2 implement
+  |- dreamerv2/                 # CE2 implement
   |- dreamerv2/gc_main.py       # Main running file
 ```
 
