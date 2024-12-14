@@ -22,8 +22,7 @@ CE2 learns the latent space by temporary distance estimator, reflecting the reac
 
 CE2 outperforms other exploration approaches across a variety of tasks.
 
-![CE2 success](Resources/exp_success_rate.png)
-<!--  <img src="Resources/exp_success_rate.png" alt="CE2 success" width="600" /> -->
+ <img src="Resources/exp_success_rate.png" alt="CE2 success" width="800" />
 
 ## Code Structure
 
