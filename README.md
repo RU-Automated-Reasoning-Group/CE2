@@ -22,12 +22,8 @@ CE2 learns the latent space by temporary distance estimator, reflecting the reac
 
 CE2 outperforms other exploration approaches across a variety of tasks.
 
-<img src="Resources/exp_success_rate.png" alt="CE2 success" width="600" />
-
-Exploration process during training steps in Ant-Maze. 
-
-<img src="Resources/ant-explore-process.png" alt="CE2 success" width="600" />
-
+![CE2 success](Resources/exp_success_rate.png)
+<!--  <img src="Resources/exp_success_rate.png" alt="CE2 success" width="600" /> -->
 
 ## Code Structure
 
